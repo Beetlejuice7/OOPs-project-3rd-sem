@@ -1,18 +1,17 @@
 #include <iostream>
 #include <unistd.h>
-#include <fstream>
-#include <string>
-#include <math.h>
-
+#include<fstream>
+#include<string>
+#include<math.h>
 using namespace std;
-
 int score = 0;
 int incor = 0;
 int value1 = 0;
 int played = 0;
+int answer;
 class quiz
 {
-    char answer;
+
     int diflev;
 
 public:
@@ -25,17 +24,17 @@ public:
     }
     void enter()
     {
-        // cout << endl << endl;
-        // cout << "\n\n\n\n\n\n\n\n\n\n\n                                                                        Press enter to continue...";
-        // cin.ignore();
+        cout << endl << endl;
+        cout << "\n\n\n\n\n\n\n\n\n\n\n                                                                        Press enter to continue...";
+        cin.ignore();
         // cin.get();
         // system("clear");
-        // loading();
+        loading();
     }
     void loading()
     {
         clear();
-        welcome();
+        MIL();
         cout << "\n\n\n\n\n\n\n\n\n\n\n\n                                                                        Loading";
         for (int i = 0; i < 2; i++)
         {
@@ -1084,8 +1083,13 @@ public:
         cout << "                                                               A. Silver                 B. Gold" << endl << endl;
         cout << "                                                               C. Platinum               D. Mercury" << endl << endl;
         cout << "                                                           --> ";
-        cin >> answer;
-        if (answer == 'B' || answer == 'b')
+        try
+        {
+        if(scanf("%d", answer)!=1)
+        {
+            throw 1;
+        }
+        else if (answer == 'B' || answer == 'b')
         {
             cout << endl;
             cout << "                                                           ✓ Correct";
@@ -1098,6 +1102,7 @@ public:
             cout << "                                                           ✕ Incorrect" << endl << endl;
             cout << "                                                           Answer : B" << endl;
             incor++;
+        }
         }
         played++;
         nextq();
@@ -1445,6 +1450,10 @@ public:
             break;
         }
     }
+    catch(int a)
+    {
+        cout << "Invalid";
+    }
 };
 int main()
 {
@@ -1452,6 +1461,5 @@ int main()
     quiz q;
     q.welcome();
     // q.enter();
-    q.loading();
     q.menu();
 }
