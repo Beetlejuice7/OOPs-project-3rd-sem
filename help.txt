@@ -35,9 +35,19 @@
 
                                     1. Select "Statistics" from the main menu.
                                     2. View your performance in each category.
+
+
+                                    3. Reset
+
+                                    - Reset the content of the app:
+
+                                    1. Choose "Reset" from the main menu.
+                                    2. Confirm the reset operation.
+
+                                    Note: Resetting may clear data, so use with caution.
                                     
                                     
-                                    3. Help
+                                    4. Help
                                     
                                     - If you need assistance or have questions, the "Help" section is here for you.
                                     
@@ -46,7 +56,15 @@
                                     1. Select "Help" from the main menu.
                                     2. Read through the instructions and guidance provided.
 
+
+                                    5. About
+
+                                    - Learn more about "Dimag Ko Khel":
+
+                                    1. Choose "About" from the main menu.
+                                    2. Read information about the app.
+
                                     
-                                    4. Exit
+                                    6. Exit
                                     
                                     - Select "Exit" to close the app.

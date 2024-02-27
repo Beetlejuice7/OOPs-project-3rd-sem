@@ -17,6 +17,11 @@ class quiz
 
 public:
     
+    void quit()
+    {
+        category();
+    }
+
     void welcome()
     {
         cout << "________________________________________________________________________________________________________________________________________________________________" << endl;
@@ -48,7 +53,7 @@ public:
     void processing()
     {
         cout << "\n\n\n\n\n\n\n\n\n\n\n\n                                                                       Processing";
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 2; i++)
         {
             cout << ".";
             cout.flush();
@@ -332,6 +337,7 @@ public:
         clear();
         MIL();
                                     //1
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           1. Who is the best football player in the world." << endl << endl;
         cout << "                                                               A. Cristiano Ronaldo       B. Kaka" << endl << endl;
@@ -341,9 +347,15 @@ public:
         if (answer == 'A' || answer == 'a')
         {
             cout << endl;
-            cout << "                                                           ✓ Correct Siuuuuuuuu";
+            cout << "                                                           ✓ Correct";
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -357,6 +369,7 @@ public:
                                     //2
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           2. Who has most individual world cups." << endl << endl;
         cout << "                                                               A. Cafu                    B. Pele" << endl << endl;
@@ -366,9 +379,15 @@ public:
         if (answer == 'B' || answer == 'b')
         {
             cout << endl;
-            cout << "                                                           ✓ Correct, RIP GOAT";
+            cout << "                                                           ✓ Correct";
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -381,6 +400,7 @@ public:
                                     //3
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           3. Which country hosted the 2018 FIFA WORLD CUP." << endl << endl;
         cout << "                                                               A. Brazil                  B. France" << endl << endl;
@@ -392,7 +412,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct";
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -405,6 +431,7 @@ public:
                                     //4
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           4. How many players are there on a standard football team?" << endl << endl;
         cout << "                                                               A. 8                       B. 10" << endl << endl;
@@ -416,7 +443,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -429,6 +462,7 @@ public:
                                     //5
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           5. In which country did the sport of football originate?" << endl << endl;
         cout << "                                                               A. England                       B. Brazil" << endl << endl;
@@ -440,7 +474,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -453,6 +493,7 @@ public:
                                     //6
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           6. Who is the all-time top scorer in the history of the UEFA Champions League?" << endl << endl;
         cout << "                                                               A. Lionel Messi                       B. Cristiano Ronaldo" << endl << endl;
@@ -464,7 +505,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -477,6 +524,7 @@ public:
                                     //7
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           7. Which English club is known as the \"Red Devils\"?" << endl << endl;
         cout << "                                                               A. Arsenal                       B. Liverpool" << endl << endl;
@@ -488,7 +536,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -501,6 +555,7 @@ public:
                                     //8
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           8. Which player is often referred to as \"CR7\" in the football world?" << endl << endl;
         cout << "                                                               A. Neymar                       B. Kaka" << endl << endl;
@@ -512,7 +567,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -525,6 +586,7 @@ public:
                                     //9
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           9. Which team has the most Champions League titles?" << endl << endl;
         cout << "                                                               A. AC Milan                       B. Real Madrid" << endl << endl;
@@ -536,7 +598,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -549,6 +617,7 @@ public:
                                     //10
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           10. Which is the home stadium of Real Madrid?" << endl << endl;
         cout << "                                                               A. Camp Nou                      B. Old Trafford" << endl << endl;
@@ -560,7 +629,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -579,6 +654,7 @@ public:
         clear();
         MIL();
                                     //1
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           1. Which player won the Ballon d'Or in 2008, ending the Ronaldo-Messi" << endl << endl;
         cout << "                                                               streak that lasted from 2008 to 2017?" << endl << endl << endl;
@@ -593,6 +669,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -605,6 +687,7 @@ public:
                                     //2
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           2. Who scored the winning goal in the 2014 FIFA World Cup final between" << endl << endl;
         cout << "                                                                Germany and Argentina?" << endl << endl << endl;
@@ -619,6 +702,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -630,6 +719,7 @@ public:
                                     //3
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           3. Which club won the UEFA Champions League in the 2011-2012 season?." << endl << endl << endl;
         cout << "                                                               A. Real Madrid             B. Chelsea" << endl << endl;
@@ -643,6 +733,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -654,6 +750,7 @@ public:
                                     //4
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           4. Who was the top scorer of the 2010 FIFA World Cup held in South Africa?" << endl << endl << endl;
         cout << "                                                               A. David Villa             B. Thomas Müller" << endl << endl;
@@ -667,6 +764,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -678,6 +781,7 @@ public:
                                     //5
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           5. Which team won the 2016 UEFA European Championship?" << endl << endl << endl;
         cout << "                                                               A. Germany                       B. Portugal" << endl << endl;
@@ -691,6 +795,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -702,6 +812,7 @@ public:
                                     //6
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           6. Who won the FIFA World Cup Golden Boot for being the top scorer in" << endl << endl;
         cout << "                                                                the 2018 tournament?" << endl << endl << endl;
@@ -716,6 +827,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -727,6 +844,7 @@ public:
                                     //7
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           7. In the 2012-2013 season, which player broke the record for the most" << endl << endl;
         cout << "                                                                goals scored in a single UEFA Champions League campaign?" << endl << endl << endl;
@@ -741,6 +859,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -752,6 +876,7 @@ public:
                                     //8
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           8. Who won the FIFA World Cup Best Young Player award in the 2014 tournament?" << endl << endl << endl;
         cout << "                                                               A. Paul Pogba                   B. James Rodríguez" << endl << endl;
@@ -765,6 +890,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -776,6 +907,7 @@ public:
                                     //9
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           9. Which player won the Golden Foot award in 2020, given to active " << endl << endl;
         cout << "                                                               players aged 29 or older for outstanding achievements??" << endl << endl << endl;
@@ -790,6 +922,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -801,6 +939,7 @@ public:
                                     //10
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           10. Which Portuguese player won the UEFA European Championship Golden" << endl << endl;
         cout << "                                                                Boot as the top scorer in the 2016 tournament?" << endl << endl << endl;
@@ -814,6 +953,12 @@ public:
             cout << "                                                           ✓ Correct" << endl;
             score++;
             value1+=20;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -832,6 +977,7 @@ public:
         clear();
         MIL();
                                     //1
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           1. What is the capital of the United States?" << endl << endl << endl;
         cout << "                                                               A. Washington, D.C.       B. New York" << endl << endl;
@@ -843,7 +989,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct";
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -857,6 +1009,7 @@ public:
                                     //2
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           2. In which continent is the Sahara Desert located?" << endl << endl << endl;
         cout << "                                                               A. Africa                  B. Asia" << endl << endl;
@@ -868,7 +1021,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct";
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -881,6 +1040,7 @@ public:
                                     //3
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           3. What is the largest planet in our solar system??." << endl << endl << endl;
         cout << "                                                               A. Earth                   B. Saturn" << endl << endl;
@@ -892,7 +1052,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct";
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -905,6 +1071,7 @@ public:
                                     //4
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           4. Who is known as the inventor of the telephone?" << endl << endl << endl;
         cout << "                                                               A. Thomas Edison           B. Alexander Graham Bell" << endl << endl;
@@ -916,7 +1083,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -929,6 +1102,7 @@ public:
                                     //5
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           5. Which ocean is the largest on Earth??" << endl << endl << endl;
         cout << "                                                               A. Indian Ocean                  B. Southern Ocean" << endl << endl;
@@ -940,7 +1114,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -953,6 +1133,7 @@ public:
                                     //6
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           6. What is the currency of Japan?" << endl << endl << endl;
         cout << "                                                               A. Yen                 B. Won" << endl << endl;
@@ -964,7 +1145,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -977,6 +1164,7 @@ public:
                                     //7
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           7. Who painted the Mona Lisa?" << endl << endl << endl;
         cout << "                                                               A. Vincent van Gogh             B. Pablo Picasso" << endl << endl;
@@ -988,7 +1176,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -1001,6 +1195,7 @@ public:
                                     //8
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           8. Which river is the longest in the world??" << endl << endl << endl;
         cout << "                                                               A. Nile River                   B. Amazon River" << endl << endl;
@@ -1012,7 +1207,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -1025,6 +1226,7 @@ public:
                                     //9
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           9. What is the official language of Brazil?" << endl << endl << endl;
         cout << "                                                               A. Brazilian               B. Portuguese" << endl << endl;
@@ -1036,7 +1238,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -1049,6 +1257,7 @@ public:
                                     //10
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           10. In which year did World War II end?" << endl << endl << endl;
         cout << "                                                               A. 1943                        B. 1950" << endl << endl;
@@ -1060,7 +1269,13 @@ public:
             cout << endl;
             cout << "                                                           ✓ Correct" << endl;
             score++;
-            value1+=20;
+            value1+=10;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -1079,6 +1294,7 @@ public:
         clear();
         MIL();
                                     //1
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           1. Which chemical element has the symbol \"Au\" on the periodic table?" << endl << endl << endl;
         cout << "                                                               A. Silver                 B. Gold" << endl << endl;
@@ -1092,6 +1308,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -1104,6 +1326,7 @@ public:
                                     //2
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           2. Who was the first woman to win a Nobel Prize" << endl << endl << endl;
         cout << "                                                               A. Mother Teresa           B. Rosalind Franklin" << endl << endl;
@@ -1117,6 +1340,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -1128,6 +1357,7 @@ public:
                                     //3
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           3. In which year did the Chernobyl nuclear disaster occur?" << endl << endl << endl;
         cout << "                                                               A. 1986                    B. 1979" << endl << endl;
@@ -1141,6 +1371,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -1152,6 +1388,7 @@ public:
                                     //4
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           4. What is the largest desert in the world by area?" << endl << endl << endl;
         cout << "                                                               A. Sahara Desert           B. Gobi Desert" << endl << endl;
@@ -1165,6 +1402,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -1176,6 +1419,7 @@ public:
                                     //5
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           5. What is the largest moon in our solar system?" << endl << endl << endl;
         cout << "                                                               A. Titan                         B. Io" << endl << endl;
@@ -1189,6 +1433,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -1200,9 +1450,10 @@ public:
                                     //6
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           6. What is the largest island in the world?" << endl << endl << endl;
-        cout << "                                                               A. Australia           B. Greenand" << endl << endl;
+        cout << "                                                               A. Australia           B. Greenland" << endl << endl;
         cout << "                                                               C. Borneo              D. Madagascar" << endl << endl;
         cout << "                                                           --> ";
         cin >> answer;
@@ -1212,6 +1463,12 @@ public:
             cout << "                                                           ✓ Correct" << endl;
             score++;
             value1+=20;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -1224,6 +1481,7 @@ public:
                                     //7
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           7. In which year did the first manned moon landing take place?" << endl << endl << endl;
         cout << "                                                               A. 1961                         B. 1975" << endl << endl;
@@ -1237,6 +1495,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -1248,6 +1512,7 @@ public:
                                     //8
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           8. In particle physics, what is the smallest building block of matter?" << endl << endl << endl;
         cout << "                                                               A. Quark                        B. Neutrino" << endl << endl;
@@ -1261,6 +1526,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -1272,6 +1543,7 @@ public:
                                     //9
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           9. Who wrote Nepali National Anthem?" << endl << endl << endl;
         cout << "                                                               A. Motiram Bhatta          B. Lekhnath Paudyal" << endl << endl;
@@ -1285,6 +1557,12 @@ public:
             score++;
             value1+=20;
         }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
+        }
         else
         {
             cout << endl;
@@ -1296,6 +1574,7 @@ public:
                                     //10
         clear();
         MIL();
+        cout << "                                                                                                                           (Q / q) = Quit" << endl;
         cout << endl << endl << endl;
         cout << "                                                           10. How many rings does the planet saturn have?" << endl << endl << endl;
         cout << "                                                               A. 8                         B. 7" << endl << endl;
@@ -1308,6 +1587,12 @@ public:
             cout << "                                                           ✓ Correct" << endl;
             score++;
             value1+=20;
+        }
+        else if (answer == 'q' || answer == 'Q')
+        {
+            score = 0;
+            value1 = 0;
+            quit();
         }
         else
         {
@@ -1452,6 +1737,6 @@ int main()
     quiz q;
     q.welcome();
     // q.enter();
-    q.loading();
+    // q.loading();
     q.menu();
 }
